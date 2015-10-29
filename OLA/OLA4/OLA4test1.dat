@@ -1,0 +1,5 @@
+Purpose: Your C++ program will read data from a file, find the first three commas in the file, and then output the first word following each of the first three commas in the file. For example, if the file contains the text from this paragraph, then the program would output to the screen these words:
+find
+and
+if
+Assume that a comma appears within at least every 200 characters in the file. Your program will prompt the user for the name of the file. If that file does not exist then your program will print a message to the user and then stop. Be sure to use comments in your code, format your code neatly, and follow our “Matters of Style” as defined in the book. You will provide appropriate prompts to the user. The output should be labeled clearly and formatted neatly.

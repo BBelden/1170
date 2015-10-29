@@ -1,0 +1,5 @@
+This Assignment is based on OLA#4. Your C++ program will read data from a file, and will now find all the commas in the file, and then output all the words following each of the commas in the file. It will also display the count of each word. For example, if the file contains the text from this paragraph, then the program would output the following to the screen:
+1. and
+2. and
+3. if
+4. then

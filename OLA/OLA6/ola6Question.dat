@@ -1,0 +1,98 @@
+Script started on Mon 22 Oct 2012 10:01:45 AM CDT
+$ cat -n ola6.cc
+     1	//Name:       Ben Belden
+     2	//Section:    CSCI 1170-001
+     3	//Assignment: Open Lab Assignment #6
+     4	//Due:        23:59, November 2, 2012
+     5	//Purpose:    This program will output a design based on a number   
+     6	//            that the user types in. If the user types in a number  
+     7	//            that is 5 through 15 (including 5 and 15) it will 
+     8	//			  output the corresponding design. So, for example, if
+     9	//			  the number types in is 5, the output will be (start
+    10	//			  with five stars, decrease down to 1, then do 1 again,
+    11	//			  and increase back to 5):
+    12	
+    13	#include <iostream>
+    14	#include <string>
+    15	
+    16	using namespace std;
+    17	
+    18	void DrawTriangle (int, char);
+    19	void DrawInvertedTriangle (int, char);
+    20	int main ()
+    21	{
+    22		
+    23		int h;
+    24		char c = '*';	
+    25		bool done; 
+    26		
+    27		cout << "Welcome. Type a number from 5 to 15 (including 5 and 15)\n";
+    28		cout << "and I will draw you a design. You can do it over and over,\n";
+    29		cout << "and type in -1 to quit.\n";
+    30		
+    31		cin >> h;
+    32		/*while (!done)
+    33		{
+    34			if (h < 5 && h != -1)
+    35			{		
+    36				cout << "Sorry, " << h << "is too low, type in another number (5 or larger).\n";
+    37				cin >> h;
+    38			}
+    39			else if (h > 15)
+    40			{
+    41				cout << "Sorry, " << h << "is too high, type in another number (15 or less).\n";
+    42				cin >> h;
+    43			}
+    44			else if (h >= 5 && h <= 15)
+    45			{
+    46				*/DrawInvertedTriangle (h, c);
+    47				DrawTriangle (h, c);
+    48			/*}
+    49			else if (h == -1)
+    50				done = true;
+    51		}
+    52		
+    53		//switch (h)
+    54			//case 
+    55		
+    56		*/cout << "Bye, thanks for playing!";
+    57		return 0;
+    58		
+    59	}
+    60	
+    61	void DrawInvertedTriangle (int h, char c)
+    62	{
+    63		int hCount = h;
+    64		while (h >= hCount)
+    65		{
+    66			int cCount = 1;
+    67			while (cCount <= hCount)
+    68			{
+    69				cout << c;
+    70				cCount++;
+    71			}
+    72			cout << endl;
+    73			hCount--;
+    74		}
+    75	}
+    76	
+    77	void DrawTriangle (int h, char c)
+    78	{
+    79		int hCount = 1;
+    80		while (hCount <= h)
+    81		{
+    82			int cCount = 1;
+    83			while (cCount <= hCount)
+    84			{
+    85				cout << c;
+    86				cCount++;
+    87			}
+    88			cout << endl;
+    89			hCount++;
+    90		}
+    91	}
+    92	
+$ exit
+exit
+
+Script done on Mon 22 Oct 2012 10:02:13 AM CDT
